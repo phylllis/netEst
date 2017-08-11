@@ -1,4 +1,4 @@
-# Instructions
+# About
 
 This is an implementation of the parameter estimation methods for linear preferential attachment model described in _Fitting the linear preferential attachment model_ (Wan et al.) [1]. The R-scripts `netfnsMLE.R` and `netfnsSnap.R` correspond to estimation algorithms for the full network (MLE) and a snapshot of the network, where the details can be found in Section 3 and 4 of Wan et al. respectively.
 
