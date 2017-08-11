@@ -13,7 +13,7 @@ source(‘netfnsMLE.R’)
 ##### Usage
 
 ```r
-netEstMLE(network,start_time,end_time)
+netEstMLE(network,start_time,end_time,din_l,din_u,dout_l,dout_u)
 ```
 
 ##### Input
@@ -29,6 +29,11 @@ The starting point of the time interval to be analyzed. Default: the beginning t
 **end_time**
 
 The ending point of the time interval to be analyzed. Default: the ending time of the observations.
+
+**din_l,din_u,dout_l,dout_u**
+
+The search range for solving for the parameter estimates for \delta_in and \delta_out.
+
 
 ##### Output
 
@@ -46,7 +51,7 @@ source(‘netfnsSnap.R’)
 ##### Usage
 
 ```r
-netEstSnap(network)
+netEstSnap(network,din_l,din_u,dout_l,dout_u)
 ```
 
 ##### Input
@@ -54,6 +59,10 @@ netEstSnap(network)
 **network**
 
 The representation of a network snapshot with _n_ edges. An _n_ by 2 matrix with each row corresponding to the start node and the end node.
+
+**din_l,din_u,dout_l,dout_u**
+
+The search range for solving for the parameter estimates for \delta_in and \delta_out.
 
 
 ##### Output
